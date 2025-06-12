@@ -1,7 +1,8 @@
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://rfwnmztxsjjeoaffdhkk.supabase.co'
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmd21tenR4c2pqZW9hZmZkaGhrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg3OTA0MzcsImV4cCI6MjA2NDM2NjQzN30.B0is894Zicf9knrmvDYxItwX8m_u9XUKINkcyOkycXc'
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!
 
 // Database Types
 export interface Database {

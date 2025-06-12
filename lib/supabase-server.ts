@@ -1,9 +1,8 @@
 import { createClient } from '@supabase/supabase-js'
 import { Database } from './supabase'
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://rfwnmztxsjjeoaffdhkk.supabase.co'
-// Using the fresh Supabase service role key for server-side operations
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmd25tenR4c2pqZW9hZmZkaGhrIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0ODc5MDQzNywiZXhwIjoyMDY0MzY2NDM3fQ.0Oz-i9vXWRoo40hmkWSoQg-ZERSfiG2DpsYE5_nkR6c'
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
+const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY!
 
 // Server-side Supabase client with service role (bypasses RLS)
 const supabaseServer = createClient<Database>(supabaseUrl, supabaseServiceKey, {
