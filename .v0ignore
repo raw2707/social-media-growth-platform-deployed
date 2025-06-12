@@ -1,0 +1,26 @@
+# Backend Protection - DO NOT MODIFY
+/app/api/
+/lib/supabase.ts
+/lib/stripe.ts
+/lib/database.sql
+/.env.local
+/.env
+/fixed-schema-deploy.sql
+/simple-deploy.sql
+/supabase/
+
+# Database and deployment files
+*.sql
+/deploy-database.*
+/DATABASE_DEPLOYMENT.md
+/API_REFERENCE.md
+/PROJECT_STATUS.md
+
+# Node modules and build files
+/node_modules/
+/.next/
+/package-lock.json
+/pnpm-lock.yaml
+
+# Environment and config (keep existing)
+# v0 should not modify these 
