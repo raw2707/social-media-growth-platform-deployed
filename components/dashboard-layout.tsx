@@ -37,9 +37,12 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         lg:translate-x-0 lg:static lg:inset-0`}>
         
         <div className="flex items-center justify-between h-16 px-6 border-b">
-          <h1 className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <Link
+            href="/"
+            className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
+          >
             SocialGrow
-          </h1>
+          </Link>
           <button 
             onClick={() => setIsSidebarOpen(false)}
             className="lg:hidden p-2 rounded-md hover:bg-gray-100"

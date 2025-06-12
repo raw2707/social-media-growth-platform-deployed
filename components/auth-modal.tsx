@@ -111,9 +111,8 @@ export default function AuthModal({ isOpen, onClose, mode, onSwitchMode }: AuthM
         })
 
         if (success) {
-          alert('Account created successfully! Welcome to your dashboard!')
+          alert("Account created successfully! You're now signed in.")
           onClose()
-          router.push('/dashboard')
         } else {
           alert('Signup failed. Please try again.')
         }
@@ -125,7 +124,6 @@ export default function AuthModal({ isOpen, onClose, mode, onSwitchMode }: AuthM
         if (success) {
           alert('Welcome back!')
           onClose()
-          router.push('/dashboard')
         } else {
           alert('Login failed. Please check your credentials.')
         }
